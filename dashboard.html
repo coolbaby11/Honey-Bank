@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>داشبورد Honey Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="welcome"></h1>
+  <p>شماره کارت: <span id="card"></span></p>
+  <p>موجودی: $<span id="balance"></span></p>
+
+  <h3>انتقال پول</h3>
+  <input id="to_user" placeholder="نام کاربری مقصد">
+  <input id="amount" type="number" placeholder="مقدار به دلار">
+  <button onclick="transfer()">انتقال</button>
+  <p class="error" id="tr_error"></p>
+
+  <button onclick="logout()">خروج</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
